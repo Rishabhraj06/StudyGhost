@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "studyghost"
+version = "0.1.0"
+description = "Ghostwrite 1-page condensed cheatsheets, Anki flashcards, and MCQ mock exams from messy lecture notes."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Rishabh Raj", email = "rishabhraj06@users.noreply.github.com" }]
+dependencies = [
+    "pypdf>=4.2.0",
+]
+
+[project.scripts]
+studyghost = "studyghost.cli:main"
